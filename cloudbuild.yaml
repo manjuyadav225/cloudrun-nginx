@@ -23,7 +23,7 @@ steps:
 # Push to GCR
 - name: 'gcr.io/cloud-builders/docker'
   id: 'Pushing image to GCR'
-  args: ['push', 'gcr.io/yougo-k8-hardway-256417/nginx-alpine:$COMMIT_SHA']
+  args: ['push', 'gcr.io/elevated-apex-368823/nginx-alpine:$COMMIT_SHA']
   
 # Deploy frontend image to cloud run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
